@@ -1,0 +1,148 @@
+// src/constants/roleServices.ts
+
+import { AppView } from '../types';
+
+export const ROLE_SERVICES: Record<string, AppView[]> = {
+  FARMER: [
+    AppView.DASHBOARD,
+    AppView.ADVICE_HUB,
+    AppView.CULTIVATION_HUB,
+    AppView.FARMER_RECORDS,
+    AppView.LAND_REGISTRY,
+    AppView.WEATHER_HUB,
+    AppView.SCANNER,
+    AppView.ENCYCLOPEDIA,
+    AppView.CHEMICAL_REGISTRY,
+    AppView.MARKETPLACE,
+    AppView.FINANCE_HUB,
+    AppView.INSURANCE_HUB,
+    AppView.GROUP_MANAGEMENT,
+    AppView.LEARNING_HUB,
+  ],
+  AGRONOMIST: [
+    AppView.DASHBOARD,
+    AppView.ADVICE_HUB,
+    AppView.CULTIVATION_HUB,
+    AppView.ENCYCLOPEDIA,
+    AppView.CHEMICAL_REGISTRY,
+    AppView.ROTATION_PLANNER,
+    AppView.ROTATION_SUGGEST,
+    AppView.RESEARCH,
+    AppView.LAB_PROCEDURES,
+    AppView.SCANNER,
+  ],
+  RESEARCHER: [
+    AppView.DASHBOARD,
+    AppView.RESEARCH,
+    AppView.ENCYCLOPEDIA,
+    AppView.CHEMICAL_REGISTRY,
+    AppView.LAB_PROCEDURES,
+    AppView.TAXONOMY_BROWSER,
+    AppView.RELATIONSHIP_MANAGER,
+    AppView.ROTATION_SUGGEST,
+    AppView.VIDEO_GENERATOR,
+  ],
+  GOVERNMENT_AGENCY: [
+    AppView.DASHBOARD,
+    AppView.BAN_LIST,
+    AppView.CHEMICAL_REGISTRY,
+    AppView.GOV_NGO_HUB,
+    AppView.UNIVERSITY_HUB,
+    AppView.ADMIN_CONSOLE,
+  ],
+  NGO: [
+    AppView.DASHBOARD,
+    AppView.WARNING_LIST,
+    AppView.CHEMICAL_REGISTRY,
+    AppView.GOV_NGO_HUB,
+  ],
+  MANUFACTURER: [
+    AppView.DASHBOARD,
+    AppView.CHEMICAL_REGISTRY,
+    AppView.PHASED_OUT_MANAGER,
+    AppView.COMPANY_REGISTRY,
+    AppView.MARKETPLACE,
+    AppView.PRODUCT_SAFETY_MANAGER,
+  ],
+  CHEMICAL_COMPANY: [
+    AppView.DASHBOARD,
+    AppView.CHEMICAL_REGISTRY,
+    AppView.PHASED_OUT_MANAGER,
+    AppView.COMPANY_REGISTRY,
+    AppView.MARKETPLACE,
+    AppView.PRODUCT_SAFETY_MANAGER,
+  ],
+  BUYER: [
+    AppView.DASHBOARD,
+    AppView.BUYER_LEDGER,
+    AppView.MARKETPLACE,
+  ],
+  BUYER_ADMIN: [
+    AppView.DASHBOARD,
+    AppView.BUYER_LEDGER,
+    AppView.ADMIN_APPROVAL_QUEUE,
+  ],
+  TRANSPORTER: [
+    AppView.DASHBOARD,
+    AppView.MARKETPLACE,
+  ],
+  VETERINARIAN: [
+    AppView.DASHBOARD,
+    AppView.ADVICE_HUB,
+    AppView.ENCYCLOPEDIA,
+    AppView.LAB_PROCEDURES,
+    AppView.LIVESTOCK_DASHBOARD,
+  ],
+  STUDENT: [
+    AppView.DASHBOARD,
+    AppView.LEARNING_HUB,
+    AppView.ENCYCLOPEDIA,
+    AppView.TAXONOMY_BROWSER,
+  ],
+  UNIVERSITY: [
+    AppView.DASHBOARD,
+    AppView.UNIVERSITY_HUB,
+    AppView.RESEARCH,
+    AppView.LAB_PROCEDURES,
+  ],
+  SUPER_ADMIN: [
+    AppView.DASHBOARD,
+    AppView.ADMIN_CONSOLE,
+    AppView.RELATIONSHIP_MANAGER,
+    AppView.ROTATION_VERIFY,
+    AppView.TAXONOMY_BROWSER,
+    AppView.ADMIN_APPROVAL_QUEUE,
+    AppView.BAN_LIST,
+    AppView.WARNING_LIST,
+    AppView.EFFICACY_DASHBOARD,
+    // all other views
+  ],
+  HOUSE_PLANT_OWNER: [
+    AppView.DASHBOARD,
+    AppView.HOUSE_PLANT_HUB,
+    AppView.ADVICE_HUB,
+    AppView.SCANNER,
+    AppView.ENCYCLOPEDIA,
+  ],
+  PET_OWNER: [
+    AppView.DASHBOARD,
+    AppView.HOUSE_PLANT_HUB,
+    AppView.ADVICE_HUB,
+    AppView.SCANNER,
+    AppView.ENCYCLOPEDIA,
+  ],
+  SEED_COMPANY: [
+    AppView.DASHBOARD,
+    AppView.COMPANY_REGISTRY,
+    AppView.MARKETPLACE,
+    AppView.VARIETY_MANAGER,
+  ],
+  VETERINARY_PHARMA: [
+    AppView.DASHBOARD,
+    AppView.COMPANY_REGISTRY,
+    AppView.MARKETPLACE,
+  ],
+};
+
+// All services, for super admin or debugging
+export const ALL_SERVICES = Object.values(AppView);
